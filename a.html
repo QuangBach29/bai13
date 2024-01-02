@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr = [22,33,44,55];
+    // arr.push(1);//=>them vao cuoi arr [22,33,44,55,1]
+    // arr.indexOf(44);//tim kiem kq 2
+    // arr.indexOf(0);//tim kiem kq -1
+    // arr.splice(3,2);//xoa tu vi tri 3 di 2 phan tu
+    // arr[2] = 100 //sua
+    //
+    // arr.concat([1,2,3]);//22,33,44,55,1,2,3
+    // arr.join('xx');//22xx33xx44xx55
+    // '2,3,4,5,6'.split(',');//[2,3,4,5,6]
+    // arr.splice(1,0,12)//them so 12 vao vi tri 1
+
+
+    //dung promt de nhap vao cac phan tu cho mang.nhap cho den khi gap 0 thi dung va in ra mang
+    // let arr=[];
+    // while(true){
+    //     let x = +prompt('nhap x');
+    //     if (x ===0){
+    //         break;
+    //     }
+    //     arr.push(x);
+    // }
+
+    //dung promt de nhap vao so luong cac phan tu cho mang va nhap vao cac phan tu cho mang. in ra mang
+    let arr = [];
+    let x = +prompt('nhap vao x so luong ptu');
+    for (let i = 0;i<x;i++){
+        let y = +prompt('phan tu'+i);
+        arr.push(y);
+    }document.write(arr);
+</script>
+</body>
+</html>

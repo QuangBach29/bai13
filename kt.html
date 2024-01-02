@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // cách khai báo biến
+    let x =
+
+        // có mấy kiểu dữ liệu
+    3
+
+    // làm sao để quy định kiểu dữ liệu cho 1 biến
+    x = 'a' || b;
+
+
+    // có những cách nào để hiển thị chữ hello ra
+    alert('hello')
+    document.write('hello')
+
+
+    // có những cách nào để nhập vào biến a
+        let a = +prompt('');
+
+    // in ra thẻ h1, img, a với JS
+    document.write('<h1>'+ 'a'+'</h1>');
+    document.write('<img src="">');
+    document.write('<a href="">' +'a'+ '</a>');
+
+    // Nhập vào tên, in ra tên
+    let a = prompt('nhap ten');
+    document.write(a);
+
+    // Nhập vào a, in ra bình phương của a
+    let a = +prompt('nhap a');
+    document.write(a*a);
+
+    // Nhập vào tên, in ra tên với h1
+    let a = +prompt('nhap ten');
+    document.write('<h1>'+ a+'</h1>');
+
+    // Nhập vào đường dẫn cho biến src, in ra ảnh với nguồn ảnh là biến src
+    let src = prompt('nhap duong dan');
+    document.write('<img src = "'+src+'">');
+
+    // Nhập vào tuổi trong biến age, in ra 'Đủ tuổi' nếu age>18
+    let tuoi = +prompt('nhap tuoi :');
+    if (tuoi > 18){
+        document.write(tuoi);
+    }
+
+    // Nhập và a, in ra 'Hello' nếu a chẵn, 'Hi' nếu a lẻ
+    let a = +prompt('nhap a');
+    if (a%2==0){
+        document.write('hello')
+    }
+    if (a%2!==0){
+        document.write('hi')
+    }
+
+    // Nhập vào a, b. Nếu a>b in ra tổng, nếu a<b in ra tích, nếu a = b in ra 'Hihi'
+    let a = +prompt('nhap a');
+    let b = +prompt('nhap b');
+    if (a>b){
+        document.write(a+b)
+    }
+    if (a<b){
+        document.write(a*b)
+    }
+    if (a=b){
+        document.write('hihi')
+    }
+
+    // Nhập a,b,c. In ra số lớn nhất
+    let a = +prompt('nhap a : ');
+    let b = +prompt('nhap b : ');
+    let c = +prompt('nhap c : ');
+    if (a>b){
+        if (a>c){
+            alert(a + 'lon nhat')
+        }else {
+            alert(c+ 'lon nhat')
+        }
+    }else if(b>c){
+        alert(b + 'lon nhat')
+    }else {
+        alert(c + ' lon nhat')
+    }
+
+    // In ra 100 chữ 'Hello'
+    for (i = 0; i <=100;i++){
+        document.write('hello')
+    }
+    // Nhập vào N từ prompt. In ra N lần chữ 'Hello'
+    let n = +prompt('nhap n');
+    for (i = 0; i <=n;i++){
+        document.write('hello')
+    }
+
+    // In ra cac số từ a đến b, mỗi số trong 1 thẻ <h1>;
+    let a = +prompt('a');
+    let b = +prompt('b');
+    for (let i = a;i<=b;i++){
+        document.write('<h1>'+ i +'</h1>'+'<br>');
+    }
+
+    // In ra các phần số chẵn trong h2, le trong h1;
+    let arr=[1, 2, 3, 4, 5, 6, 7, 8]
+    for (let i = 0;i<arr.length;i++){
+        if (arr[i]%2==0){
+            document.write('<h2>'+arr[i]+'</h2>' );
+        }
+        if (arr[i]%2!==0){
+            document.write('<h1>'+arr[i]+'</h1>' );
+        }
+    }
+
+
+    // Đếm có  bao nhiêu phần tử chia 5 dư 2 trong mảng
+    let arr = [12,13,14,15,16,22,17]
+    let dem = 0;
+    for (let i = 0;i<arr.length;i++){
+        if (arr[i]%5==2){
+            dem++;
+        }
+    }
+
+    // Nhap vào a, đếm số lượng a trong mảng.
+    let arr = [1,2,3,3,4,3,5,6,7,8]
+    let a = +prompt('nhap a');
+    let dem = 0
+    for (let i = 0;i<arr.length;i++){
+        if (arr[i]===a){
+            dem++
+        }
+    }alert(dem)
+
+</script>
+</body>
+</html>
